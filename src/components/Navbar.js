@@ -11,10 +11,9 @@ const Navbar = () => {
                 <img src={logo} alt="Logo" className={styles.logoImg} />
             </div>
             <div className={styles.links}>
-                <a href="#women" className={styles.link}>Summer Collection</a>
-                <a href="#men" className={styles.link}>Men</a>
-                <a href="#home" className={styles.link}>Home</a>
-                <a href="#more" className={styles.link}>More</a>
+                <a href="#women" className={styles.link}>Home</a>
+                <a href="#men" className={styles.link}>About Us</a>
+                <a href="#home" className={styles.link}>Contact</a>
             </div>
             <div className={styles.search}>
                 <div className={styles.group}>
