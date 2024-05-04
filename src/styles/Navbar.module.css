@@ -1,0 +1,140 @@
+/* Navbar.module.css */
+.navbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    height: 100px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logoImg {
+    height: 120px;
+    width: auto;
+}
+
+.links {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+}
+
+.link {
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+    font-weight: 500;
+    position: relative;
+}
+
+.link:hover {
+    color: #ff0000;
+}
+
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width .3s;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.search {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.group {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #333;
+    width: 24px;
+    height: 24px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px 8px 8px 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.icons {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.accountIcon, .wishlistIcon, .cartIcon {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.accountIcon svg, .wishlistIcon svg, .cartIcon svg {
+    margin-right: 5px;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .logo, .links, .search, .icons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logoImg {
+        height: 80px; /* Smaller logo for mobile */
+    }
+
+    .links, .icons {
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+
+    .link {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    .search {
+        order: 3; /* Search bar can go below links/icons */
+    }
+
+    .group {
+        max-width: 100%;
+    }
+
+    .input {
+        font-size: 14px; /* Smaller font size for input */
+    }
+}
