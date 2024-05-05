@@ -1,0 +1,39 @@
+
+.siteFooter {
+    background-color: #333333; /* Dark slate color, adjust based on your theme */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footerSection h4 {
+    margin-bottom: 10px;
+}
+
+.footerSection p,
+.footerSection a {
+    color: #f8f8f8;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+.socialIcons a {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #3498db; /* Light blue for contrast */
+    padding: 8px;
+    border-radius: 50%; /* Makes the social icons rounded */
+}
+
+.socialIcons a:last-child {
+    margin-right: 0;
+}
