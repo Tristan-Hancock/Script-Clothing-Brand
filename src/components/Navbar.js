@@ -3,8 +3,14 @@ import logo from '../images/scriptlogo.jpg';
 import { FaHeart } from "react-icons/fa";
 import { RiAccountCircleLine } from "react-icons/ri";
 import { FaBagShopping } from "react-icons/fa6";
+import Modal from './Modal';
+import React, { useState } from 'react';
 
 const Navbar = () => {
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const toggleModal = () => setModalOpen(!isModalOpen);
+
     return (
         <nav className={styles.navbar}>
             <div className={styles.logo}>
@@ -26,10 +32,17 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={styles.icons}>
-                <a href="#account" className={styles.accountIcon}><RiAccountCircleLine/> Account</a>
+            <a onClick={toggleModal} className={styles.accountIcon}><RiAccountCircleLine/> Account</a>
                 <a href="#wishlist" className={styles.wishlistIcon}><FaHeart /> Wishlist</a>
                 <a href="#cart" className={styles.cartIcon}><FaBagShopping /> Cart</a>
             </div>
+            <Modal isOpen={isModalOpen} onClose={toggleModal}>
+                <h2>Login using mobile</h2>
+                <p>Kindly enter the 10-digit mobile number and verify using OTP.</p>
+                <input type="text" placeholder="Mobile Number +91 XXX-XXX-XXXX" />
+                <button onClick={() => {}}>Submit</button>
+                <p>By signing in, I agree to Terms & Conditions and Privacy Policy</p>
+            </Modal>
         </nav>
     );
 };
