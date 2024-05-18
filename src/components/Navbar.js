@@ -32,9 +32,9 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={styles.icons}>
-            <a onClick={toggleModal} className={styles.accountIcon}><RiAccountCircleLine/> Account</a>
-                <a href="#wishlist" className={styles.wishlistIcon}><FaHeart /> Wishlist</a>
-                <a href="#cart" className={styles.cartIcon}><FaBagShopping /> Cart</a>
+            <a onClick={toggleModal} className={styles.accountIcon}><RiAccountCircleLine/> </a>
+                <a href="#wishlist" className={styles.wishlistIcon}><FaHeart /> </a>
+                <a href="#cart" className={styles.cartIcon}><FaBagShopping /> </a>
             </div>
             <Modal isOpen={isModalOpen} onClose={toggleModal}>
                 <h2>Login using mobile</h2>
