@@ -17,7 +17,9 @@ const Navbar = () => {
                 <img src={logo} alt="Logo" className={styles.logoImg} />
             </div>
             <div className={styles.links}>
-                <a href="#women" className={styles.link}>Home</a>
+                <a href="#Home" className={styles.link}>Home</a>
+                <a href="#Shop" className={styles.link}>Shop</a>
+                <a href="#men" className={styles.link}>Shop Men</a>
                 <a href="#men" className={styles.link}>About Us</a>
                 <a href="#home" className={styles.link}>Contact</a>
             </div>
@@ -32,7 +34,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={styles.icons}>
-            <a onClick={toggleModal} className={styles.accountIcon}><RiAccountCircleLine/> </a>
+            <a onClick={toggleModal} className={styles.accountIcon}>Account<RiAccountCircleLine/> </a>
                 <a href="#wishlist" className={styles.wishlistIcon}><FaHeart /> </a>
                 <a href="#cart" className={styles.cartIcon}><FaBagShopping /> </a>
             </div>

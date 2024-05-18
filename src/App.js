@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <ImageSlider />
       <main style={{ flex: 1 }}>
-        <Collection />
+       <Collection /> 
       </main>
       <Footer />
     </div>
