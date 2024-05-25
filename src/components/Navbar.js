@@ -34,7 +34,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={styles.icons}>
-            <a onClick={toggleModal} className={styles.accountIcon}>Account<RiAccountCircleLine/> </a>
+            <a onClick={toggleModal} className={styles.accountIcon}>Account</a> 
                 <a href="#wishlist" className={styles.wishlistIcon}><FaHeart /> </a>
                 <a href="#cart" className={styles.cartIcon}><FaBagShopping /> </a>
             </div>

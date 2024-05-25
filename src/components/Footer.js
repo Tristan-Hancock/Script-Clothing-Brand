@@ -8,9 +8,9 @@ const Footer = () => {
             <div className={styles.footerContent}>
                 <div className={styles.footerSection}>
                     <p>Contemporary designs flow and drape over the body in unique and flattering silhouettes that can be styled in a multitude of ways, resulting in a look that is both powerful and whimsical and always effortlessly stylish!</p>
-                    <p>Owned By : Coastal Designer<br />GST No.: 33AAAPI1039F1ZF</p>
+                    <p>Owned By : Sakshi Khedia <br />GST No.:</p> 
                     <div className={styles.logo}>
-                        <h2>KAVERI</h2>
+                        <h2>Script</h2>
                         <div className={styles.socialIcons}>
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                                 <FaFacebookF />
@@ -18,9 +18,7 @@ const Footer = () => {
                             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                                 <FaInstagram />
                             </a>
-                            <a href="https://behance.net" target="_blank" rel="noopener noreferrer">
-                                <FaBehance />
-                            </a>
+                         
                         </div>
                     </div>
                 </div>
@@ -46,7 +44,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className={styles.footerBottom}>
-                <p>© 2024 KAVERI. Powered by Shopify</p>
+                <p>© 2024 Script. Powered by AceLink Solutions</p>
             </div>
         </footer>
     );

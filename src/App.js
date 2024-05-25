@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import Collection from './components/Collection';
+import ClothingItems from './components/clothingitems';
 import Footer from './components/Footer';
 import FreeShipping from './components/FreeShipping'; // Adjust the path as needed
 import ImageSlider from './components/imageSlider';
+import Review from './components/Review';
 function App() {
   return (
     <div className="App" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
@@ -12,8 +13,10 @@ function App() {
       <Navbar />
       <ImageSlider />
       <main style={{ flex: 1 }}>
-       <Collection /> 
+       <ClothingItems /> 
       </main>
+      <Review />
+
       <Footer />
     </div>
   );

@@ -1,0 +1,54 @@
+.clothing-card {
+    width: 750px; /* Width for larger cards */
+    height: 600px; /* Increased height */
+    background-color: White; /* White background */
+    text-align: left;
+    margin: 0 10px; /* Margin for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    scroll-behavior: smooth; /* Smooth scrolling */
+    /* Align items to the top */
+}
+.clothing-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+    cursor: pointer;
+}
+.clothing-image {
+    width: 500px;
+    height: 100%; /* Occupy most of the card height */
+    object-fit: cover; /* Ensure image covers the card */
+}
+
+.clothing-info {
+    padding: 10px;
+    height: 20%; /* Remaining height for the info */
+}
+
+.clothing-name {
+    font-size: 18px;
+    color: #000; /* Black color for the name */
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.clothing-price {
+    font-size: 16px;
+    color: #555; /* Dark gray color for the price */
+    margin: 0;
+    padding: 5px 0;
+}
+
+.clothing-cards::-webkit-scrollbar {
+    height: 10px; /* Height of the scrollbar */
+}
+
+.clothing-cards::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.clothing-cards::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color on hover */
+}
