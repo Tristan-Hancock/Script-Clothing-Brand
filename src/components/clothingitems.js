@@ -17,7 +17,6 @@ const ClothingItems = () => {
                     />
                 ))}
             </div>
-            <a href="#" className="view-all">View all</a>
         </div>
     );
 };
