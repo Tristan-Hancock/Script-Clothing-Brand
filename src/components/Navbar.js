@@ -1,7 +1,6 @@
 import styles from '../styles/Navbar.module.css';
 import logo from '../images/scriptlogo.jpg';
 import { FaHeart } from "react-icons/fa";
-import { RiAccountCircleLine } from "react-icons/ri";
 import { FaBagShopping } from "react-icons/fa6";
 import Modal from './Modal';
 import React, { useState } from 'react';

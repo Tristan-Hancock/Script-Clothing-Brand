@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../styles/imageSlider.css'; // Ensure this path is correct
-import uvb from '../images/promoimages/uvb.png';
 import stock1 from '../images/promoimages/stock1.png';
 import stock2 from '../images/promoimages/stock2.jpg';
 import stock3 from '../images/promoimages/stock3.jpg';
