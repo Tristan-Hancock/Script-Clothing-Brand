@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import collections from '../data/collections';
 import ClothingCard from './ClothingCard';
 import '../styles/clothingitems.css';
@@ -9,12 +10,13 @@ const ClothingItems = () => {
             <h1 className="clothing-title">Spring '24</h1>
             <div className="clothing-cards">
                 {collections.map(item => (
-                    <ClothingCard 
-                        key={item.id}
-                        name={item.name}
-                        price={item.price}
-                        imageUrl={item.imageUrl}
-                    />
+                    <Link to={`/product/${item.id}`} key={item.id} className="clothing-card-link">
+                        <ClothingCard 
+                            name={item.name}
+                            price={item.price}
+                            imageUrl={item.imageUrl}
+                        />
+                    </Link>
                 ))}
             </div>
         </div>

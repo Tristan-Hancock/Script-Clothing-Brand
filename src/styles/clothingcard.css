@@ -1,5 +1,5 @@
 .clothing-card {
-    width: 600px; /* Adjusted width */
+    width: 470px; /* Adjusted width */
     height: 800px; /* Adjusted height */
     background-color: white;
     text-align: left;
@@ -19,7 +19,7 @@
 }
 
 .clothing-image-container {
-    width: 600px;
+    width: 470px;
     height: 800px; /* Occupy 80% of the card height */
     overflow: hidden;
     position: relative;
