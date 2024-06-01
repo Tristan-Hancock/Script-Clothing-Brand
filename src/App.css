@@ -1,6 +1,12 @@
 body {
   margin: 0;
-  font-family: 'Lora', serif;
+  font-family: Neuzeit S, sans-serif;
+  font-family: Neuzeit S, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.5em;
+  color: #494949;
 }
 
 /* Responsive styles */

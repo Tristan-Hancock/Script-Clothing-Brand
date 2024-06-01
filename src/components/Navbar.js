@@ -4,6 +4,7 @@ import { FaHeart } from "react-icons/fa";
 import { FaBagShopping } from "react-icons/fa6";
 import Modal from './Modal';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -16,11 +17,19 @@ const Navbar = () => {
                 <img src={logo} alt="Logo" className={styles.logoImg} />
             </div>
             <div className={styles.links}>
-                <a href="#Home" className={styles.link}>Home</a>
-                <a href="#Shop" className={styles.link}>Shop</a>
-                <a href="#men" className={styles.link}>Shop Men</a>
-                <a href="#men" className={styles.link}>About Us</a>
-                <a href="#home" className={styles.link}>Contact</a>
+                <Link to="/" className={styles.link}>Home</Link>
+                <div className={styles.dropdown}>
+                    <Link to="/shop" className={styles.link}>Shop</Link>
+                    <div className={styles.dropdownContent}>
+                        <Link to="/all">ALL</Link>
+                        <Link to="/co-ord-sets">Co-ord sets</Link>
+                        <Link to="/shirts">Shirts</Link>
+                        <Link to="/dresses">Dresses</Link>
+                    </div>
+                </div>
+                <Link to="/shop-men" className={styles.link}>Shop Men</Link>
+                <Link to="/about-us" className={styles.link}>About Us</Link>
+                <Link to="/contact" className={styles.link}>Contact</Link>
             </div>
             <div className={styles.search}>
                 <div className={styles.group}>
@@ -33,9 +42,9 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={styles.icons}>
-            <a onClick={toggleModal} className={styles.accountIcon}>Account</a> 
-                <a href="#wishlist" className={styles.wishlistIcon}><FaHeart /> </a>
-                <a href="#cart" className={styles.cartIcon}><FaBagShopping /> </a>
+                <a onClick={toggleModal} className={styles.accountIcon}>Account</a>
+                <Link to="/wishlist" className={styles.wishlistIcon}><FaHeart /> </Link>
+                <Link to="/cart" className={styles.cartIcon}><FaBagShopping /> </Link>
             </div>
             <Modal isOpen={isModalOpen} onClose={toggleModal}>
                 <h2>Login using mobile</h2>
