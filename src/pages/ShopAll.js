@@ -8,17 +8,19 @@ const ShopAll = () => {
         <div className={styles.shopAllContainer}>
             <div className={styles.leftContainer}>
                 <div className={styles.filterSection}>
-                    <h2>Sort by</h2>
-                    <button>+</button>
+                    <h2>Sort by <button>+</button></h2>
                 </div>
                 <div className={styles.filterSection}>
-                    <h2>Price</h2>
-                    <input type="text" placeholder="₹0" className={styles.priceInput} />
-                    <input type="text" placeholder="₹36500" className={styles.priceInput} />
+                    <h2>Price <button>-</button></h2>
+                    <div className={styles.priceRangeContainer}>
+                        <input type="text" placeholder="₹0" className={styles.priceInput} />
+                        <span> - </span>
+                        <input type="text" placeholder="₹36500" className={styles.priceInput} />
+                    </div>
                     <input type="range" min="0" max="36500" className={styles.priceRange} />
                 </div>
                 <div className={styles.filterSection}>
-                    <h2>Product type</h2>
+                    <h2>Product type <button>-</button></h2>
                     <ul>
                         <li>Co-ords</li>
                         <li>Dress</li>
@@ -31,17 +33,22 @@ const ShopAll = () => {
                     </ul>
                 </div>
                 <div className={styles.filterSection}>
-                    <h2>Availability</h2>
+                    <h2>Color <button>+</button></h2>
+                </div>
+                <div className={styles.filterSection}>
+                    <h2>Availability <button>-</button></h2>
                     <ul>
                         <li>In stock</li>
                     </ul>
                 </div>
                 <div className={styles.filterSection}>
-                    <h2>Size</h2>
+                    <h2>Size <button>-</button></h2>
                     <ul>
                         <li>XS</li>
                         <li>S</li>
                         <li>M</li>
+                        <li>L</li>
+                        <li>XL</li>
                     </ul>
                 </div>
             </div>

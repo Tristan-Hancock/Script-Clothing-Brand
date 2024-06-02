@@ -1,15 +1,14 @@
-/* Navbar.module.css */
 .navbar {
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 0 50px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    height: 100px;
+    height: 125px;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure it stays above other content */
+    z-index: 1000;
     font-family: Butler;
     font-size: 25px;
     color: #1e1e1e;
@@ -21,10 +20,12 @@
 
 .logo {
     flex: 1;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .logoImg {
-    height: 80px;
+    height: 124px; /* Increased logo height */
     width: auto;
 }
 
@@ -32,6 +33,7 @@
     display: flex;
     flex: 2;
     justify-content: center;
+    align-items: center;
 }
 
 .link {
@@ -64,6 +66,7 @@
     flex: 2;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .group {
@@ -93,22 +96,27 @@
 .icons {
     flex: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
     cursor: pointer;
 }
-.icons:hover{
-    color: red;
-}
-.accountIcon, .wishlistIcon, .cartIcon {
+
+.icons a {
     display: flex;
     align-items: center;
     color: black;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px; /* Ensure the same font size */
+    font-weight: 500; /* Ensure the same font weight */
+    margin: 0 20px;
 }
 
-.accountIcon svg, .wishlistIcon svg, .cartIcon svg {
-    margin-right: 5px;
+.icons a.accountIcon {
+    font-size: 20px; /* Ensure the same font size */
+}
+
+.icons:hover {
+    color: red;
 }
 
 /* Media Queries for Mobile Devices */
@@ -127,7 +135,7 @@
     }
 
     .logoImg {
-        height: 80px; /* Smaller logo for mobile */
+        height: 100px; /* Adjust logo size for mobile */
     }
 
     .links, .icons {
@@ -136,11 +144,12 @@
     }
 
     .link {
-        font-size: 20px; /* Smaller font size for mobile */
+        font-size: 18px; /* Adjust font size for mobile */
+        margin: 10px 0; /* Adjust margin for mobile */
     }
 
     .search {
-        order: 3; /* Search bar can go below links/icons */
+        order: 3;
     }
 
     .group {
@@ -148,18 +157,29 @@
     }
 
     .input {
-        font-size: 14px; /* Smaller font size for input */
+        font-size: 14px;
+    }
+
+    .icons a {
+        font-size: 20px; /* Adjust icon size for mobile */
+    }
+
+    .icons a.accountIcon {
+        font-size: 20px; /* Adjust account icon size for mobile */
     }
 }
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 .dropdownContent {
     display: none;
     position: absolute;
+    top: 100%; /* Position below the "Shop" link */
+    left: 0;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -168,7 +188,8 @@
 
 .dropdownContent a {
     color: black;
-    padding: 12px 16px;
+    padding: 8px 12px; /* Adjusted padding for smaller text */
+    font-size: 14px; /* Smaller text size */
     text-decoration: none;
     display: block;
 }
@@ -182,4 +203,19 @@
 }
 
 .dropdown:hover .link {
+}
+
+.accountIcon, .wishlistIcon, .cartIcon {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 25px; /* Ensure the same font size */
+    font-weight: 500; /* Ensure the same font weight */
+    margin: 0 20px; /* Same margin as other links */
+    position: relative;
+}
+
+.accountIcon:hover, .wishlistIcon:hover, .cartIcon:hover {
+    color: #ff0000; /* Same hover effect */
 }

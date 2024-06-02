@@ -1,18 +1,21 @@
 .shopAllContainer {
     display: flex;
     padding: 20px;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .leftContainer {
     width: 25%;
     padding-right: 20px;
     border-right: 1px solid #ccc;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
 .rightContainer {
     width: 75%;
     padding-left: 20px;
-    overflow: hidden; /* Prevent overflow and horizontal scrolling */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .heading {
@@ -32,25 +35,46 @@
 }
 
 .filterSection h2 {
+    display: flex;
+    justify-content: space-between;
     font-size: 1.2em;
     margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
 
 .filterSection ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .filterSection li {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.filterSection button {
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.priceRangeContainer {
+    display: flex;
+    align-items: center;
 }
 
 .priceInput {
-    width: 100px;
+    width: 80px;
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
 .priceRange {
     width: 100%;
+    margin-top: 10px;
 }
