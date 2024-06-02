@@ -12,6 +12,7 @@
 .rightContainer {
     width: 75%;
     padding-left: 20px;
+    overflow: hidden; /* Prevent overflow and horizontal scrolling */
 }
 
 .heading {
@@ -22,7 +23,7 @@
 
 .clothingGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    grid-template-columns: repeat(2, 1fr); /* Two items per row */
     gap: 20px; /* Space between items */
 }
 

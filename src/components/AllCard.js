@@ -1,18 +1,19 @@
 import React from 'react';
-import '../styles/clothingcard.css';
+import { Link } from 'react-router-dom';
+import styles from '../styles/AllCard.module.css';
 
-const AllCard = ({ name, price, imageUrl }) => {
+const AllCard = ({ id, name, price, imageUrl }) => {
     return (
-        <div className="clothing-cards-container">
-        <div className="clothing-card">
-            <div className="clothing-image-container">
-                <img src={imageUrl} alt={name} className="clothing-image" />
-            </div>
-            <div className="clothing-info">
-                <h3 className="clothing-name">{name}</h3>
-                <p className="clothing-price">{price}</p>
-            </div>
-        </div>
+        <div className={styles.card}>
+            <Link to={`/product/${id}`} className={styles.cardLink}>
+                <div className={styles.imageContainer}>
+                    <img src={imageUrl} alt={name} className={styles.image} />
+                </div>
+                <div className={styles.info}>
+                    <h3 className={styles.name}>{name}</h3>
+                    <p className={styles.price}>₹{price}</p>
+                </div>
+            </Link>
         </div>
     );
 };

@@ -1,35 +1,38 @@
-.clothing-card {
-    width: 470px; /* Adjusted width */
-    height: 800px; /* Adjusted height */
+.card {
+    width: 950px; /* Adjusted width to create a square */
+    height: auto; /* Let the height adjust to content */
     background-color: white;
     text-align: left;
-    margin: 0 10px;
+    margin: 0 auto 20px; /* Center the card and add bottom margin for spacing */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.clothing-card:hover {
+
+.card:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Shadow on hover */
     cursor: pointer;
 }
-.clothing-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cover the container without stretching */
-}
 
-.clothing-image-container {
-    width: 470px;
-    height: 800px; /* Occupy 80% of the card height */
+.imageContainer {
+    width: 950px;
+    height: 800px; /* Adjusted height for the image */
     overflow: hidden;
     position: relative;
 }
-.clothing-info {
-    padding: 10px;
-    height: 1; /* Remaining height for the info */
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Cover the container without stretching */
 }
 
-.clothing-name {
+.info {
+    padding: 10px;
+    flex-grow: 1; /* Allow content to grow */
+}
+
+.name {
     font-size: 18px;
     color: #000; /* Black color for the name */
     font-weight: bold;
@@ -37,19 +40,14 @@
     padding: 5px 0;
 }
 
-.clothing-price {
+.price {
     font-size: 16px;
     color: #555; /* Dark gray color for the price */
     margin: 0;
     padding: 5px 0;
 }
 
-
-.clothing-cards-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 20px;
-    position: relative;
+.cardLink {
+    text-decoration: none;
+    color: inherit;
 }
-
