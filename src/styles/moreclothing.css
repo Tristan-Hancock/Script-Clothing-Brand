@@ -72,3 +72,30 @@
     font-size: 16px;
     color: #555;
 }
+/* Responsive styles */
+@media (max-width: 768px) {
+    .shop-container {
+        flex-direction: column;
+    }
+
+    .filter-sidebar {
+        width: 100%;
+        padding: 10px;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .filter-section input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .product-list {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .product-item {
+        width: 100%;
+    }
+}

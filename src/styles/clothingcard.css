@@ -53,3 +53,24 @@
     position: relative;
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+    .clothing-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .clothing-image-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .clothing-image {
+        height: auto;
+    }
+
+    .clothing-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

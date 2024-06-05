@@ -7,3 +7,12 @@
     font-size: 48px;
     padding: 50px;
 }
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        font-size: 24px;
+    }
+}

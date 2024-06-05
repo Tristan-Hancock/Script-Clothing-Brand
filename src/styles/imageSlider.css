@@ -39,3 +39,17 @@
 .slick-dots li.slick-active button:before {
   color: red; /* Adjust the active dot color as needed */
 }
+/* Responsive styles */
+@media (max-width: 768px) {
+  .image-slider img {
+      max-height: 300px; /* Adjust max-height for smaller screens */
+  }
+
+  .slick-dots {
+      bottom: -20px; /* Adjust position for smaller screens */
+  }
+
+  .slick-dots li button:before {
+      font-size: 10px; /* Adjust dot size for smaller screens */
+  }
+}

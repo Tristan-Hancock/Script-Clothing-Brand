@@ -23,10 +23,7 @@ const ProductDetails = () => {
                         <h1 className="product-title">{product.name}</h1>
                         <p className="product-price">₹{product.price}</p>
                         <p className="product-description">MRP - Inclusive of all taxes.</p>
-                        <div className="product-color">
-                            <span>Color: </span>
-                            <span>Off White</span>
-                        </div>
+                    
                         <div className="product-color-options">
                             <img src={product.imageUrl} alt="color option" className="color-option-image" />
                             {/* Add more color options here if needed */}

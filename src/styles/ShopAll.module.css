@@ -78,3 +78,46 @@
     width: 100%;
     margin-top: 10px;
 }
+/* Responsive styles */
+@media (max-width: 768px) {
+    .shopAllContainer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .leftContainer,
+    .rightContainer {
+        width: 100%;
+        padding: 0;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+    }
+
+    .heading {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .clothingGrid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .filterSection h2 {
+        font-size: 1em;
+    }
+
+    .filterSection li {
+        padding-left: 10px;
+    }
+
+    .priceInput {
+        width: 60px;
+        margin-right: 5px;
+    }
+
+    .priceRange {
+        margin-top: 5px;
+    }
+}

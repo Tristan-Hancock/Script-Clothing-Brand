@@ -214,3 +214,48 @@
     text-decoration: underline;
     color: #333;
 }
+/* Responsive styles */
+@media (max-width: 768px) {
+    .product-details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-info-section {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-title, .product-price, .product-description, .product-actions, .buy-it-now-button, .additional-info p {
+        text-align: center;
+    }
+
+    .product-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .add-to-cart-button, .buy-it-now-button {
+        width: 100%;
+    }
+
+    .product-size-options {
+        justify-content: center;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .subscribe input[type="email"], .subscribe button {
+        border-radius: 4px;
+        margin: 5px 0;
+    }
+}
