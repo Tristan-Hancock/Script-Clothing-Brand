@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom'; // Add useNavigate
 import collections from '../data/collections';
 import '../styles/productdetails.css';
 
 const ProductDetails = () => {
     const { id } = useParams();
+    const navigate = useNavigate(); // Initialize useNavigate
     const product = collections.find(item => item.id === parseInt(id));
     const [quantity, setQuantity] = useState(1);
     const [selectedSize, setSelectedSize] = useState(null);
 
     const increaseQuantity = () => setQuantity(quantity + 1);
     const decreaseQuantity = () => setQuantity(quantity > 1 ? quantity - 1 : 1);
+
+    const handleBuyNow = () => {
+        navigate('/transaction');
+    };
 
     return (
         <div className="product-details-page">
@@ -55,7 +60,7 @@ const ProductDetails = () => {
                             </div>
                             <button className="add-to-cart-button">ADD TO CART</button>
                         </div>
-                        <button className="buy-it-now-button">BUY IT NOW</button>
+                        <button className="buy-it-now-button" onClick={handleBuyNow}>BUY IT NOW</button>
                         <div className="additional-info">
                             <p className="size-chart">Size Chart</p>
                             <p className="description">Description +</p>

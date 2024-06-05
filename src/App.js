@@ -35,6 +35,8 @@ function App() {
           <Route path="/shop-men" element={<Unavailable />} />
           <Route path="/about-us" element={<Unavailable />} />
           <Route path="/contact" element={<Unavailable />} />
+          <Route path="/transaction" element={<Unavailable />} /> {/* Add this route */}
+
         </Routes>
         <Footer />
       </div>
