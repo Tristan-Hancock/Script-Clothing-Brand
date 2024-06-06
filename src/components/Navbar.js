@@ -42,8 +42,8 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={styles.icons}>
-                <a onClick={toggleModal} className={styles.accountIcon}>Account</a>
-                <Link to="/wishlist" className={styles.wishlistIcon}><FaHeart /> </Link>
+            <Link to="/unavailable" className={styles.accountIcon}>Account</Link>
+            <Link to="/wishlist" className={styles.wishlistIcon}><FaHeart /> </Link>
                 <Link to="/cart" className={styles.cartIcon}><FaBagShopping /> </Link>
             </div>
             <Modal isOpen={isModalOpen} onClose={toggleModal}>
