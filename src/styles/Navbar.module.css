@@ -10,7 +10,6 @@
     top: 0;
     z-index: 1000;
     font-family: Butler;
-    font-size: 25px;
     color: #1e1e1e;
     letter-spacing: .2em;
     text-transform: uppercase;
@@ -19,7 +18,7 @@
 }
 
 .logo {
-    flex: 1;
+    flex-shrink: 0; /* Prevent the logo from shrinking */
     display: flex;
     justify-content: flex-start;
 }
@@ -31,16 +30,17 @@
 
 .links {
     display: flex;
-    flex: 2;
+    flex: 1; /* Allow it to grow and shrink */
     justify-content: center;
     align-items: center;
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 .link {
     margin: 0 20px;
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     position: relative;
 }
@@ -63,10 +63,11 @@
 }
 
 .search {
-    flex: 2;
+    flex: 2; /* Allow it to grow and shrink */
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* Prevent overflow */
 }
 
 .group {
@@ -88,13 +89,13 @@
 .input {
     width: 100%;
     padding: 8px 8px 8px 40px;
-    font-size: 16px;
+    font-size: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 .icons {
-    flex: 1;
+    flex-shrink: 0; /* Prevent icons from shrinking */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -106,13 +107,14 @@
     align-items: center;
     color: black;
     text-decoration: none;
-    font-size: 20px; /* Ensure the same font size */
+    font-size: 15px; /* Ensure the same font size */
     font-weight: 500; /* Ensure the same font weight */
     margin: 0 20px;
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 .icons a.accountIcon {
-    font-size: 20px; /* Ensure the same font size */
+    font-size: 15px; /* Ensure the same font size */
 }
 
 .icons:hover {
@@ -210,7 +212,7 @@
     align-items: center;
     color: black;
     text-decoration: none;
-    font-size: 25px; /* Ensure the same font size */
+    font-size: 20px; /* Ensure the same font size */
     font-weight: 500; /* Ensure the same font weight */
     margin: 0 20px; /* Same margin as other links */
     position: relative;

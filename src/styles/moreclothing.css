@@ -1,6 +1,8 @@
 /* moreclothing.css */
 .shop-container {
     display: flex;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .filter-sidebar {
@@ -48,6 +50,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+
 }
 
 .product-item {

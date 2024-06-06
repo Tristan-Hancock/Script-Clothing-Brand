@@ -51,6 +51,8 @@
     width: 100%;
     margin-top: 20px;
     position: relative;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+
 }
 
 /* Responsive styles */
