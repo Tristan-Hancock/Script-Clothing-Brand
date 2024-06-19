@@ -33,15 +33,6 @@ const ShopAll = () => {
                     </ul>
                 </div>
                 <div className={styles.filterSection}>
-                    <h2>Color <button>+</button></h2>
-                </div>
-                <div className={styles.filterSection}>
-                    <h2>Availability <button>-</button></h2>
-                    <ul>
-                        <li>In stock</li>
-                    </ul>
-                </div>
-                <div className={styles.filterSection}>
                     <h2>Size <button>-</button></h2>
                     <ul>
                         <li>XS</li>
@@ -53,7 +44,6 @@ const ShopAll = () => {
                 </div>
             </div>
             <div className={styles.rightContainer}>
-                <h1 className={styles.heading}>Shop All</h1>
                 <div className={styles.clothingGrid}>
                     {collections.map(item => (
                         <AllCard 

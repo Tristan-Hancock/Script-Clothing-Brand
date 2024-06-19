@@ -3,9 +3,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../styles/imageSlider.css'; // Ensure this path is correct
-import stock1 from '../images/promoimages/stock1.png';
-import stock2 from '../images/promoimages/stock2.jpg';
-import stock3 from '../images/promoimages/stock3.jpg';
+import poster1 from '../images/promoimages/poster1.png';
+import poster2 from '../images/promoimages/poster2.png';
+import poster3 from '../images/promoimages/poster3.png';
 const ImageSlider = () => {
   const settings = {
     dots: true,
@@ -18,9 +18,9 @@ const ImageSlider = () => {
   };
 
   const images = [
-    stock1,
-    stock2,
-    stock3
+    poster1,
+    poster2,
+    poster3
   ];
 
   return (
