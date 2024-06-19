@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className={styles.links}>
                 <Link to="/" className={styles.link}>Home</Link>
                 <div className={styles.dropdown}>
-                    <Link to="/shop" className={styles.link}>Shop</Link>
+                    <Link to="" className={styles.link}>Shop</Link>
                     <div className={styles.dropdownContent}>
                         <Link to="/all">ALL</Link>
                         <Link to="/co-ord-sets">Co-ord sets</Link>
