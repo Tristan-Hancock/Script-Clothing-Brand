@@ -34,7 +34,7 @@ const Navbar = () => {
                 <Link to="/about-us" className={styles.link}>About Us</Link>
                 <Link to="/contact" className={styles.link}>Contact</Link>
             </div>
-            <div className={styles.search}>
+            {/* <div className={styles.search}>
                 <div className={styles.group}>
                     <svg viewBox="0 0 24 24" aria-hidden="true" className={styles.searchIcon}>
                         <g>
@@ -49,7 +49,7 @@ const Navbar = () => {
                         onChange={(e) => setSearchTerm(e.target.value)}
                     />
                 </div>
-            </div>
+            </div> */}
             <div className={styles.icons}>
                 <Link to="/unavailable" className={styles.accountIcon}>Account</Link>
                 <Link to="/wishlist" className={styles.wishlistIcon}><FaHeart /></Link>

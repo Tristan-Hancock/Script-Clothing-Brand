@@ -127,6 +127,7 @@
         flex-direction: column;
         padding: 10px;
         height: auto;
+        position: static;
     }
 
     .logo, .links, .search, .icons {

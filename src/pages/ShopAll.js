@@ -7,33 +7,9 @@ const ShopAll = () => {
     return (
         <div className={styles.shopAllContainer}>
             <div className={styles.leftContainer}>
+        
                 <div className={styles.filterSection}>
-                    <h2>Sort by <button>+</button></h2>
-                </div>
-                <div className={styles.filterSection}>
-                    <h2>Price <button>-</button></h2>
-                    <div className={styles.priceRangeContainer}>
-                        <input type="text" placeholder="₹0" className={styles.priceInput} />
-                        <span> - </span>
-                        <input type="text" placeholder="₹36500" className={styles.priceInput} />
-                    </div>
-                    <input type="range" min="0" max="36500" className={styles.priceRange} />
-                </div>
-                <div className={styles.filterSection}>
-                    <h2>Product type <button>-</button></h2>
-                    <ul>
-                        <li>Co-ords</li>
-                        <li>Dress</li>
-                        <li>Dresses</li>
-                        <li>Jacket Sets</li>
-                        <li>Jumpsuits</li>
-                        <li>Kaftans</li>
-                        <li>Kurta Sets</li>
-                        <li>Tops</li>
-                    </ul>
-                </div>
-                <div className={styles.filterSection}>
-                    <h2>Size <button>-</button></h2>
+                    <h2>Sizes<button>-</button></h2>
                     <ul>
                         <li>XS</li>
                         <li>S</li>
