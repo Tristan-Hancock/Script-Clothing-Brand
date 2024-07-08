@@ -1,5 +1,4 @@
 // components/Navbar.js
-import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles/Navbar.module.css';
 import logo from '../images/scriptlogo.jpg';
