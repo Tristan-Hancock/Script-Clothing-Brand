@@ -1,4 +1,4 @@
-// context/SearchContext.js
+// components/ProductSearchFilter/SearchContext.js
 import React, { createContext, useState } from 'react';
 
 export const SearchContext = createContext();

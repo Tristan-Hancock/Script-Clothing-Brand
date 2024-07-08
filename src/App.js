@@ -8,14 +8,12 @@ import Review from './components/Review';
 import Unavailable from './pages/Unavailable';
 import ShopAll from './pages/ShopAll';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { CartProvider } from './components/ProductSearchFilter/CartContext';
 import ProductSearchFilter from './components/ProductSearchFilter/ProductSearchFilter';
 import { SearchProvider } from './components/ProductSearchFilter/SearchContext';
 import BuyButton from './shopify/BuyButton'; // Update the import path as necessary
 
 function App() {
   return (
-    <CartProvider>
       <SearchProvider>
         <Router>
           <div className="App" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
@@ -46,7 +44,6 @@ function App() {
           </div>
         </Router>
       </SearchProvider>
-    </CartProvider>
   );
 }
 
