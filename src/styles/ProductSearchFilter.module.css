@@ -100,3 +100,39 @@
   cursor: pointer;
   border-radius: 0;
 }
+/* Responsive styles */
+@media (max-width: 768px) {
+  .clothingItemsContainer {
+    padding: 10px;
+  }
+
+  .clothingTitle {
+    font-size: 20px;
+  }
+
+  .clothingCardsWrapper {
+    padding: 10px;
+  }
+
+  .clothingCards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .clothingCardLink {
+    flex: 0 0 auto;
+    margin-right: 10px;
+  }
+
+  .sliderContainer {
+    margin: 10px 0;
+  }
+
+  .slider::-webkit-slider-thumb,
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+  }
+}
