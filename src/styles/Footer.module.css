@@ -63,6 +63,7 @@
     color: #333;
     font-size: 20px;
     text-decoration: none;
+    
 }
 
 .socialIcons a:hover {
@@ -110,7 +111,12 @@
         min-width: 100%;
         text-align: center;
     }
+.socialIcons{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 
+}
     .subscribe {
         flex-direction: column;
         align-items: stretch;

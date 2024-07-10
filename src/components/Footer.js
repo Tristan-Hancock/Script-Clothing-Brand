@@ -8,14 +8,14 @@ const Footer = () => {
             <div className={styles.footerContent}>
                 <div className={styles.footerSection}>
                     <p>Contemporary designs flow and drape over the body in unique and flattering silhouettes that can be styled in a multitude of ways, resulting in a look that is both powerful and whimsical and always effortlessly stylish!</p>
-                    <p>Owned By : Sakshi Khedia <br />GST No.:</p> 
+                    <p>Owned By : Somya Khedia Agrawal<br /></p> 
                     <div className={styles.logo}>
                         <h2>Script</h2>
                         <div className={styles.socialIcons}>
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                                 <FaFacebookF />
                             </a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/script_officialbyska?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
                                 <FaInstagram />
                             </a>
                          
@@ -36,7 +36,7 @@ const Footer = () => {
                 </div>
                 <div className={styles.footerSection}>
                     <h4>Let's Share the Love</h4>
-                    <p>Stay updated with all good things from Kaveri, offers, promotions, new stores and our latest collections.</p>
+                    <p>Stay updated with all good things from Script, offers, promotions, new stores and our latest collections.</p>
                     <div className={styles.subscribe}>
                         <input type="email" placeholder="Enter email" />
                         <button type="submit">→</button>
