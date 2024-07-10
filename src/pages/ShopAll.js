@@ -8,27 +8,33 @@ const ShopAll = () => {
   const [filteredItems, setFilteredItems] = useState(collections);
   const [sortOption, setSortOption] = useState('');
 
-  useEffect(() => {
-    let sortedItems = [...filteredItems];
+  const handleFilterChange = (size) => {
+    let filtered = collections;
+    if (size !== '') {
+      filtered = collections.filter(item => item.sizes.includes(size));
+    }
+    applySort(filtered, sortOption);
+  };
+
+  const handleSortChange = (sortOption) => {
+    setSortOption(sortOption);
+    applySort(filteredItems, sortOption);
+  };
+
+  const applySort = (items, sortOption) => {
+    let sortedItems = [...items];
     if (sortOption === 'asc') {
       sortedItems.sort((a, b) => parseFloat(a.price.replace('₹', '')) - parseFloat(b.price.replace('₹', '')));
     } else if (sortOption === 'desc') {
       sortedItems.sort((a, b) => parseFloat(b.price.replace('₹', '')) - parseFloat(a.price.replace('₹', '')));
     }
     setFilteredItems(sortedItems);
+  };
+
+  useEffect(() => {
+    applySort(filteredItems, sortOption);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sortOption]);
-
-  const handleFilterChange = (size) => {
-    let filtered = collections;
-    if (size !== '') {
-      filtered = collections.filter(item => item.sizes.includes(size));
-    }
-    setFilteredItems(filtered);
-  };
-
-  const handleSortChange = (sortOption) => {
-    setSortOption(sortOption);
-  };
 
   return (
     <div className={styles.shopAllContainer}>

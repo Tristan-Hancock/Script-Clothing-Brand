@@ -11,7 +11,7 @@ const AllCard = ({ id, name, price, imageUrl }) => {
                 </div>
                 <div className={styles.info}>
                     <h3 className={styles.name}>{name}</h3>
-                    <p className={styles.price}>₹{price}</p>
+                    <p className={styles.price}>{price}</p>
                 </div>
             </Link>
         </div>
