@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilter, faSortAmountUp, faSortAmountDown } from '@fortawesome/free-solid-svg-icons';
 import styles from '../styles/Filter.module.css';
 
 const Filter = ({ sizes, onFilterChange, onSortChange }) => {
@@ -19,7 +21,7 @@ const Filter = ({ sizes, onFilterChange, onSortChange }) => {
 
   return (
     <div className={styles.filterContainer}>
-      <h2>Filter by Size</h2>
+      <h2><FontAwesomeIcon icon={faFilter} /> Filter by Size</h2>
       <select value={selectedSize} onChange={handleSizeChange} className={styles.sizeSelect}>
         <option value="">All Sizes</option>
         {sizes.map((size, index) => (
@@ -27,7 +29,7 @@ const Filter = ({ sizes, onFilterChange, onSortChange }) => {
         ))}
       </select>
 
-      <h2>Sort by Price</h2>
+      <h2><FontAwesomeIcon icon={faSortAmountUp} /> <FontAwesomeIcon icon={faSortAmountDown} /> Sort by Price</h2>
       <select value={selectedSort} onChange={handleSortChange} className={styles.sortSelect}>
         <option value="">No Sorting</option>
         <option value="asc">Price: Low to High</option>
