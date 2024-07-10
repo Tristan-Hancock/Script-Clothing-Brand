@@ -58,9 +58,9 @@
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 7px) {
     .clothing-card {
-      width: 90%; /* Make the card width 90% of its container */
+      width: 100%; /* Make the card width 90% of its container */
       height: auto; /* Adjust height to auto */
       margin: 10px 0; /* Add some margin for spacing */
     }
