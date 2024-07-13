@@ -18,7 +18,6 @@ const Footer = () => {
                             <a href="https://www.instagram.com/script_officialbyska?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
                                 <FaInstagram />
                             </a>
-                         
                         </div>
                     </div>
                 </div>
