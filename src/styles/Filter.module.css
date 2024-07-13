@@ -27,10 +27,12 @@
       padding: 10px;
       background-color: #f5f5f5;
       border-radius: 4px;
+
     }
   
     .sizeSelect, .sortSelect {
       font-size: 14px;
+      
     }
   
     h2 {

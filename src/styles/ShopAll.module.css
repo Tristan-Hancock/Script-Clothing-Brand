@@ -10,7 +10,7 @@
 }
 
 .leftContainer {
-    width: 25%;
+    width: 35%;
     padding-right: 20px;
     border-right: 1px solid #e0e0e0;
     box-sizing: border-box;
@@ -18,7 +18,6 @@
 
 .rightContainer {
     width: 75%;
-    padding-left: 20px;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -105,13 +104,12 @@
 @media (max-width: 768px) {
     .shopAllContainer {
         flex-direction: column;
-        padding: 10px;
+        padding:10px;
     }
 
     .leftContainer,
     .rightContainer {
         width: 100%;
-        padding: 0;
         border-right: none;
         border-bottom: none;
         margin-bottom: 20px;
