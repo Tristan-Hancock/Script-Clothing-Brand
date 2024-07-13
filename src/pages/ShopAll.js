@@ -7,6 +7,7 @@ import styles from '../styles/ShopAll.module.css';
 const ShopAll = () => {
   const [filteredItems, setFilteredItems] = useState(collections);
   const [sortOption, setSortOption] = useState('');
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const handleFilterChange = (size) => {
     let filtered = collections;
@@ -32,6 +33,15 @@ const ShopAll = () => {
   };
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
     applySort(filteredItems, sortOption);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sortOption]);
@@ -40,17 +50,17 @@ const ShopAll = () => {
     <div className={styles.shopAllContainer}>
       <div className={styles.leftContainer}>
         <div className={styles.filterSection}>
-          <Filter 
-            sizes={['XS', 'S', 'M', 'L', 'XL']} 
-            onFilterChange={handleFilterChange} 
+          <Filter
+            sizes={['XS', 'S', 'M', 'L', 'XL']}
+            onFilterChange={handleFilterChange}
             onSortChange={handleSortChange}
           />
         </div>
       </div>
       <div className={styles.rightContainer}>
-        <div className={styles.clothingGrid}>
+        <div className={`${styles.clothingGrid} ${isMobile ? styles.mobileGrid : ''}`}>
           {filteredItems.map(item => (
-            <AllCard 
+            <AllCard
               key={item.id}
               id={item.id}
               name={item.name}
